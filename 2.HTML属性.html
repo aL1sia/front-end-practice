@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML属性</title>
+</head>
+<body>
+             <!-- URL             自定义名称       -->
+    <a href="https://ys.mihoyo.com">百度</a>
+    <!-- anchor 锚点  hypertext reference 超文本引用-->
+    <hr>
+
+    <a href="https://ys.mihoyo.com" target="_self">当前窗口</a>
+    <br>
+    <a href="https://ys.mihoyo.com" target="_blank">新窗口</a>
+    <br>
+    <a href="https://ys.mihoyo.com" target="_parent">父窗口</a>
+    <br>
+    <a href="https://ys.mihoyo.com" target="_top">顶级窗口</a>
+    <br>
+    <a href="https://ys.mihoyo.com" target="_framename">框架窗口</a>
+<!--    
+                                            _self        当前窗口
+                                            _blank       新窗口
+                                            _parent      父窗口
+                                            _top         顶级窗口
+                                            _framename   框架窗口
+-->
+    <hr>
+                                                                                                                            <!--无法显示图片后会出现alt内容 -->
+    <img src="https://upload-bbs.miyoushe.com/upload/2024/07/22/323298655/aca904518c53f60e511117da0fac4778_9107278402309769446.gif" alt="图片加载失败" width="150" height="200">
+                         <!-- image 图片  source 源文件              alternative 替代文本--><!-- width 宽度  height 高度-->
+    <hr>
+    <!--  
+        块元素 block    
+    新行开始 占据一整行
+    可包含块级元素和行内元素
+    块级元素在浏览器显示时，通常会以新行来开始（和结束）。例如：<div>, <p>, <h1> 到 <h6>, <ul>, <ol>, <li>, <table>, <form> 等。
+        行内元素 inline
+    和其他元素在一行上
+    只占据它对应标签的边框所包含的空间
+    行内元素只能包含数据和其他行内元素，不能包含块级元素
+    行内元素在显示时通常不会以新行开始。例如：<span>, <a>, <strong>, <em>, <img>, <input>, <label>, <br> 等。
+    
+    
+    -->
+
+    <input type="text" value="文本框">
+    <input type="password" value="密码框">
+    <input type="radio" value="单选框">
+    <input type="checkbox" value="复选框">
+    <input type="submit" value="提交按钮">
+    <input type="reset" value="重置按钮">
+    <input type="button" value="普通按钮">
+    <input type="file" value="文件上传">
+    <input type="hidden" value="隐藏域">
+    <input type="image" value="图像域">
+    <input type="color" value="颜色选择">
+    <input type="date" value="日期选择">
+    <input type="datetime-local" value="日期时间选择">
+    <input type="email" value="邮箱">
+    <input type="month" value="月份">
+    <input type="number" value="数字">
+    <input type="range" value="范围">
+    <input type="search" value="搜索">
+    <input type="tel" value="电话">
+    <input type="time" value="时间">
+    <input type="url" value="URL">
+    <input type="week" value="周">
+    <!-- input 输入框  type 类型  value 值-->
+    <hr>
+
+    <form action="https://ys.mihoyo.com" method="get">
+        <input type="text" name="username" value="用户名">
+        <input type="password" name="password" value="密码">
+        <input type="submit" value="提交">
+        <input type="reset" value="重置">
+    </form>
+    <!-- form 表单  action 行为  method 方法  get 获取  post 提交-->
+    <hr>
+
+    <select>
+        <option value="1">选项1</option>
+        <option value="2">选项2</option>
+        <option value="3">选项3</option>
+    </select>
+</body>
+</html>
