@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS导入</title>
+    <link rel="stylesheet" href="./CSS/style.css"><!--外部样式表-->
+    <!-- relationship 关系  href 定义链接目标的位置-->
+    
+    <style>
+        p{
+            color: blue;
+            font-size: 20px;
+        }
+        h2{
+            color: green;
+            font-size: 30px;
+        }
+  /*    选择器{             选择标签进行渲染
+            属性1:属性值1;
+            属性2:属性值2;
+        } */
+    </style><!--内部样式表-->
+
+</head>
+<body>
+    <p>这是应用内部样式表p的文字</p>
+    <h1 style="color: red;">这是一个内联样式</h1>
+    <h2>这是应用内部样式表h2的文件</h2>
+    <h3>这是应用外部样式的的文字</h3>
+</body>
+</html>
+    <!-- 内联样式    >   内部样式表   >   外部样式表   优先级-->
+    <!-- 在<head>内      在<head>间      从CSS文件链接在<head>引用  -->
+    <!-- <html>自带+<style>写入标签中-->
