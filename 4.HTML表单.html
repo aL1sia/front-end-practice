@@ -6,45 +6,56 @@
     <title>HTML表单</title>
 </head>
 <body>
-    <form action="https://ys.mihoyo.com" method="get">
-        <label for="username">用户名：</label>
-        <input type="text" id="username" name="username">
-        <br>
-        <label for="password">密码：</label>
-        <input type="password" id="password" name="password">
-        <br>
+    <form action="#" method="get">
+        <!-- 
+        action 提交地址（需要api）  method 提交方式 
+        # 代表当前页面 
+        -->
+        <label for="username">你名字</label>
+        <input type="text" id="username" placeholder="请输入" value="你干嘛诶哟"><br><br>
+            <!-- placeholder 占位符 提示文本       value 值 初始内容    -->
+        <label for="password">密码的</label><br><br>
+        <input type="password" id="password" value="密码框"><br><br>
+        
+        <label>性别</label>
+        <input type="radio" name="gender" >男
+        <input type="radio" name="gender" >女
+        <input type="radio" name="gender" >保密<br><br>
+        <!--      radio 单选框           name 用于区分不同的单选框  名称为gender -->
+        <label>爱好</label>
+        <input type="checkbox" name="hobby" >篮球
+        <input type="checkbox" name="hobby" >足球
+        <input type="checkbox" name="hobby" >rap<br><br>
+        <!--      checkbox 复选框           name 用于区分不同的复选框  名称为hobby -->
         <input type="submit" value="提交">
-        <input type="reset" value="重置">
-    </form>
+    </form><!--表单-->
     <hr>
 
 
-    
+
     <!--    
-    
-    <input type="text" value="文本框">
-    <input type="password" value="密码框">
-    <input type="radio" value="单选框">
-    <input type="checkbox" value="复选框">
-    <input type="submit" value="提交按钮">
-    <input type="reset" value="重置按钮">
-    <input type="button" value="普通按钮">
-    <input type="file" value="文件上传">
-    <input type="hidden" value="隐藏域">
-    <input type="image" value="图像域">
-    <input type="color" value="颜色选择">
-    <input type="date" value="日期选择">
-    <input type="datetime-local" value="日期时间选择">
-    <input type="email" value="邮箱">
-    <input type="month" value="月份">
-    <input type="number" value="数字">
-    <input type="range" value="范围">
-    <input type="search" value="搜索">
-    <input type="tel" value="电话">
-    <input type="time" value="时间">
-    <input type="url" value="URL">
-    <input type="week" value="周">
     <hr>
+
+        <input type="radio" value="单选框"><br><br>
+        <input type="checkbox" value="复选框"><br><br>
+        <input type="submit" value="提交按钮"><br><br>
+        <input type="reset" value="重置按钮"><br><br>
+        <input type="button" value="普通按钮"><br><br>
+        <input type="file" value="文件上传"><br><br>
+        <input type="hidden" value="隐藏域"><br><br>
+        <input type="image" value="图像域"><br><br>
+        <input type="color" value="颜色选择"><br><br>
+        <input type="date" value="日期选择"><br><br>
+        <input type="datetime-local" value="日期时间选择"><br><br>
+        <input type="email" value="邮箱"><br><br>
+        <input type="month" value="月份"><br><br>
+        <input type="number" value="数字"><br><br>
+        <input type="range" value="范围"><br><br>
+        <input type="search" value="搜索"><br><br>
+        <input type="tel" value="电话"><br><br>
+        <input type="time" value="时间"><br><br>
+        <input type="url" value="URL"><br><br>
+        <input type="week" value="周"><br><br>
 
     <form action="https://ys.mihoyo.com" method="get">
         <input type="text" name="username" value="用户名">
