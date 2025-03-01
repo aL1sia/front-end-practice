@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS选择器</title>
+
+    <style>
+        /*元素选择器*/
+        h2{
+            color: green;
+            font-size: 30px;
+        }
+        /*类选择器*/
+        .sb{
+            background-color: burlywood;
+        }
+        /*id选择器*/
+        #sb{
+            color: blue;
+            font-size: 25px;
+        }
+        /*通用选择器/伪类选择器*/
+        *{
+            font-family: "kaiti";
+            font-weight: bold;
+        }
+        /*子元素选择器*/
+        .father > .son{
+            color: red;
+        }
+        /*后代选择器 后代包含子代  */
+        .father p{
+            color: blue;
+        }
+        /*id>>类>标签*/
+
+        /*相邻元素选择器 选择当前标签之后紧跟的一个标签*/
+        h3 + p{
+            background-color: #492828;
+        }
+        /*伪类选择器*/
+        #man:hover{
+            background-color: blueviolet;
+        }
+        /*  :first-child   选择父元素的第一个子元素
+            :nth-child     选择父元素下的第n个子元素
+            :active        选择用户激活（即点击）的元素，通常用于按钮或其他可点击元素
+        )*/
+
+        /*伪元素选择器
+        ::after
+        ::before
+        插入虚拟内容
+        */
+
+    </style>
+
+</head>
+<body>
+    <h1>不同类型的CSS选择器</h1>
+
+    <h2>1.元素选择器</h2>
+    
+    <h3 class="sb">2.类选择器</h3>
+
+    <h3>这是另一个类选择器</h3>
+    
+    <h4 id="sb">3.id选择器</h4>
+
+    <div class="father">
+        <p class="son">这是一个子元素选择器</p>
+        <div>
+            <p class="grandson">这是另一个后代选择器</p>
+        </div>
+    </div>
+
+    <p>这是一个普通p标签</p>
+    <h3>这是相邻兄弟选择器</h3>
+    <p>这是一个普通p标签</p>
+
+    <h3 id="man">这是一个伪类选择器</h3>
+</body>
+</html>
