@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript函数</title>
+</head>
+
+<body>
+    <script>
+        function SeeYouAgain() {
+            console.log('manba out');
+        }
+        SeeYouAgain();
+
+
+        function Man() {
+            return 'man! - 返回值';
+        }
+
+        let a = Man();
+
+        console.log(a);
+
+        function hello_with_params(name) {
+            console.log('hello, ' + name);
+        }
+
+        hello_with_params('六百六十六');
+        /*作用域 全局 与 局部*/
+        let global_var = '全局变量';
+        function local_var_function() {
+            let local_var = '局部变量';
+            console.log('函数内打印全局变量：' + global_var);
+            console.log('函数内打印局部变量：' + local_var);
+        }
+        local_var_function();
+        console.log('全局打印全局变量：' + global_var);
+        console.log('全局打印局部变量：' + local_var);
+    </script>
+</body>
+
+</html>
