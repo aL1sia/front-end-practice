@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS基本语法</title>
+</head>
+<body>
+    <script>
+        var x=114;/*variable 变量  函数作用域*/
+        let y=514;/*同为变量       块级作用域*/
+        const MAN = 1919810;/*constant 常量*/
+        console.log(x,y,MAN);
+        let name = '你爸得了MVP';
+        console.log(name);
+        let empty_value=null;
+        console.log(empty_value);
+        /*undefinde 变量已声明 但未被赋值 或 未计算出*/
+        /*null 明确赋值为空*/
+        let age=18;
+        
+        if (age>18){
+            console.log('也不是不行');
+        }else if (age=18){
+            console.log('刚满18岁~');
+        }else{
+            console.log('粒辣！');
+        }
+
+        let tim =12;
+
+        if (tim<12){
+            alert('枣尚豪');
+        }else if (tim=12){
+            alert('你要是每天睡到10点钟,那还有脸去吃早饭吗?');
+        }else{
+            alert('回家吧孩子,回家吧,你更适合做一头死猪');
+        }
+
+        for(let i=1;i<6;i++){
+            console.log(i);
+        }
+        let index=114;
+        let cont=1;
+        while(cont<42){
+            console.log(index);
+            cont++;
+        }
+        /*break continue */
+    </script>
+    <!--同C-->
+</body>
+</html>
