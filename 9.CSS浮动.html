@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS浮动</title>
+    <style>
+        .father{
+            background-color: aquamarine;
+            border: 3px solid #000;
+            /* overflow: hidden;  清除浮动1 */
+        }
+        .left-son{
+            width: 200px;
+            height: 200px;
+            background-color: #ffee00;
+            float: left;
+        }
+        .right-son{
+            width: 200px;
+            height: 200px;
+            background-color: chartreuse;
+            float: right;
+        }
+        .father::after{   /*伪元素清除浮动2*/
+            content: '';
+            display: block;
+            clear: both;
+        }
+        /*.father
+        这是一个类选择器，表示这段样式应用于所有拥有 class="father" 的HTML元素。
+        ::after
+        这是一个伪元素，表示在 .father 元素的内容之后插入一个虚拟元素。
+        content: ''
+        这是伪元素的必要属性，用于定义插入的内容。在这里，内容为空字符串（''），表示不插入任何可见内容。虽然内容为空，但这个伪元素仍然会占据空间。
+        display: block
+        这个属性将伪元素设置为块级元素（block）。块级元素会独占一行，并且可以通过 clear 属性来清除浮动。
+        clear: both
+        这个属性用于清除浮动。它的值 both 表示清除来自左边和右边的浮动元素的影响。具体来说，它会确保伪元素不会与浮动元素在同一行显示，从而“打断”浮动元素对父元素的影响。*/
+    </style>
+</head>
+<body>
+    <div class="father">
+        <div class="left-son">左浮动</div>
+        <div class="left-son">左浮动</div>
+        <div class="left-son">左浮动</div>
+        <div class="left-son">左浮动</div>
+        <div class="left-son">左浮动</div>
+        <div class="left-son">左浮动</div>
+        <div class="left-son">左浮动</div>
+
+        <div class="right-son">右浮动</div>
+    </div>
+    
+
+</body>
+</html>
