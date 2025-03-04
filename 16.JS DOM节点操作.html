@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS DOM节点操作</title>
+    <style>
+        table{
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+                   /*收缩*/
+        }
+        th{
+            background-color: #ddd;
+        }
+        th,td{
+            border: 1px solid #1b17172f;
+            text-align: center;
+        }
+        button{
+            margin-left: 5px;
+            background-color:#ddd;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">表格的增删改查</h1>
+                <!--对齐-->
+    <table id="table">
+        <button onclick="addRow()">+</button>
+        <tr>
+            <th>姓名</th>
+            <th>联系方式</th>
+            <th>操作</th>
+        </tr>
+        <tr>
+            <td>黑手</td>
+            <td>1145141919810</td>
+            <td>
+                <button onclick="editRow(this)">编辑</button><button onclick="delRow(this)">删除</button>
+            </td>
+        </tr>
+    </table>
+    <script src="/js/table.js"></script>
+</body>
+</html>
